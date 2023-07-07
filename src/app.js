@@ -5,7 +5,11 @@ const app = express();
 // Config de la app de express
 app.use(express.json())
 
-// Ruta
+// Rutas
+app.get('/', (req, res) => {
+    res.send('mandangas varias')
+})
+
 app.use('/api', require('./routes/api'));
 
 

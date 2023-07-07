@@ -4,7 +4,7 @@ GET http://localhost:3000/api/products
 GET http://localhost:3000/api/products/64a6d57353f337c694f7633c
 ###
 
-POST http://localhost:3000/api/products
+POST https://tienda-mongodb-q2ou.onrender.com/api/products
 Content-Type: application/json
 
 {
