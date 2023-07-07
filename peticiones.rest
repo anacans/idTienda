@@ -1,0 +1,55 @@
+GET http://localhost:3000/api/products
+###
+
+GET http://localhost:3000/api/products/64a6d57353f337c694f7633c
+###
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Aspiradora sin cable",
+    "description": "Para aspirar en todos los sitios",
+    "price": 199,
+    "available": true,
+    "stock": 34,
+    "department": "hogar"
+}
+
+###
+PUT http://localhost:3000/api/products/64a6d57353f337c694f7633c
+Content-Type: application/json
+
+{
+    "name": "Termomix",
+    "description": "Para aspirar en todos los sitios",
+    "price": 199,
+    "available": true,
+    "stock": 34,
+    "department": "hogar"
+}
+
+###
+DELETE http://localhost:3000/api/products/64a6d57353f337c694f7633c
+
+POST http://localhost:3000/api/users/register
+
+
+#########################
+##      API USERS      ##
+#########################
+
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username": "Mario",
+    "email": "marito@correito.com",
+    "password": "jejeje"
+}
+
+###
+PUT http://localhost:3000/api/users/64a7e5ed7c5440394e5a8e9a/buy/64a6d57353f337c694f7633c
+
+### 
+GET http://localhost:3000/api/users/
